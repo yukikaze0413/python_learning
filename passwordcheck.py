@@ -14,7 +14,7 @@ def check(password):
             check[1] = 1
         elif char.isdigit():
             check[2] = 1
-        if not (char.isalpha() | char.isdigit() | char.isspace() ):
+        if not (char.isalpha() | char.isdigit() | char.isspace()):
             check[3] = 1
     if sum(check) == 4:
         return True
